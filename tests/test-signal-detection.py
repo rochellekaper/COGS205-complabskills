@@ -1,7 +1,7 @@
 import unittest
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import copy
-from scripts.signal_detection import SignalDetection
+from signal_detection import SignalDetection
 
 class TestSignalDetection(unittest.TestCase):
     sdt1 = SignalDetection(133, 431, 7, 23)
