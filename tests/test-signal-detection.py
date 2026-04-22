@@ -1,9 +1,10 @@
 import unittest
 import matplotlib.pyplot as plt
 import copy
+from scripts.signal_detection import SignalDetection
 
 class TestSignalDetection(unittest.TestCase):
-    sdt1 = signal_detection.py.SignalDetection(133, 431, 7, 23)
+    sdt1 = SignalDetection(133, 431, 7, 23)
     def test_init_values_are_numeric(self):
         self.hits = hits
         self.misses = misses
