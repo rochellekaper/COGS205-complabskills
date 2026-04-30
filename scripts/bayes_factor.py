@@ -31,7 +31,8 @@ class BayesFactor:
         return integrate.quad(self.likelihood, 0, 1)
     
     def evidence_spike(self, a = 0.4999, b = 0.5001):
-        return integrate.quad(self.likelihood, a, b)
+        c = b - a 
+        return (1 / c) * (integrate.quad(self.likelihood, a, b))
     
     def bayes_factor(self):
         
