@@ -20,7 +20,8 @@ There are 2 purposefully failing tests:
 a. test_bayes_factor_returns_spike_over_slab_ratio that returns slab over spike erroneously, 
 b. test_evidence_spike_multiplied_by_1_over_c that does not mulitply by 1/c erroneously. 
 
-To run the unit testing, you cd into the folder where the files are stored and run the Dockerfile. Put these lines in your terminal (without the backticks): 
-`cd /workspace/COGS205-complabskills/bayes_factor`
+To run the unit testing, you cd into the folder where the files are stored:
+`cd /COGS205-complabskills/bayes_factor`
+
+and run the Dockerfile. Put this lines in your terminal (without the backticks): 
 `docker build -t bayes_factor .`
-`docker run bayes_factor`
