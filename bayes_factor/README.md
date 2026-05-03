@@ -16,12 +16,11 @@ You can test the functions in various ways:
 
 Whenever a test fails, the code will output telling you what function failed and why, and these are titled specifically so you can see what went wrong. 
 
-    There are 2 purposefully failing tests:
-    a. test_bayes_factor_returns_spike_over_slab_ratio that returns slab over spike erroneously, 
-    b. test_evidence_spike_multiplied_by_1_over_c that does not mulitply by 1/c erroneously. 
+There are 2 purposefully failing tests:
+a. test_bayes_factor_returns_spike_over_slab_ratio that returns slab over spike erroneously, 
+b. test_evidence_spike_multiplied_by_1_over_c that does not mulitply by 1/c erroneously. 
 
-To test the bayes_factor.py script, you cd into the workspace where the file and test is stored: 
-cd/COGS205-complabskills/bayes_factor
-
-Then to run the unit test, you type python3 -m unittest tests.test_bayes_factor
-in the terminal. 
+To run the unit testing, you cd into the folder where the files are stored and run the Dockerfile. Put these lines in your terminal (without the backticks): 
+`cd /workspace/COGS205-complabskills/bayes_factor`
+`docker build -t bayes_factor .`
+`docker run bayes_factor`
